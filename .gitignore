@@ -1,0 +1,139 @@
+# ==========================================
+# 1. CRITICAL: Security & API Secrets
+# ==========================================
+# Plaintext env (never committed — encrypted .env.enc is what goes in git)
+.env
+.env.*
+!.env.example
+!.env.enc
+
+# SOPS / age private key (NEVER committed)
+keys.txt
+key.txt
+*.agekey
+*.agekey.txt
+age-key*.txt
+/key*.txt
+
+# Google OAuth secrets
+client_secret*.json
+client_secret.json
+youtube_token*.json
+youtube_token.json
+
+# Kaggle credentials
+kaggle.json
+access_token
+
+# Generic secrets
+*.pem
+*.key
+
+# ==========================================
+# 2. Generated Media & Binary Assets
+# ==========================================
+# Audio masters & stems
+*.wav
+*.flac
+*.mp3
+*.aac
+*.ogg
+*.m4a
+
+# Video renders & intermediate files
+*.mp4
+*.mkv
+*.mov
+*-temp.mp4
+
+# Generated visual assets
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Notation & sheet music
+*.abc
+
+# Local songs library & staging caches
+songs/
+outputs/
+output/
+.queue_staging/
+
+# ==========================================
+# 3. Model Weights & Binaries (audio.cpp / YuE2)
+# ==========================================
+*.gguf
+*.bin
+*.tar.gz
+*.zip
+audiocpp/
+models/
+
+# Kaggle weights build staging folder
+yue2-weights-build/
+
+# ==========================================
+# 4. Logs & Debug Files
+# ==========================================
+*.log
+server_gpu*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# 5. Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Build & packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==========================================
+# 6. Jupyter Notebook Checkpoints
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# 7. Operating System & Editor Files
+# ==========================================
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# 8. Auto-downloaded Assets
+# ==========================================
+# JetBrains Mono font (auto-fetched by video_maker.py)
+fonts/

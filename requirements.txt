@@ -1,0 +1,10 @@
+huggingface_hub>=0.24
+python-dotenv>=1.0
+typer>=0.12
+openai>=1.50
+rich>=13.9
+requests>=2.32
+titlecase>=2.4
+google-api-python-client>=2.140
+google-auth-oauthlib>=1.2
+google-auth-httplib2>=0.2

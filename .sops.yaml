@@ -1,0 +1,8 @@
+creation_rules:
+  # Encrypt all .env files (but NOT .env.example)
+  - path_regex: \.env$
+    age: age1yzr259c4556yh474flqc0g9nr2gdd0gujz9p08t0edp7pjc0yc5qvn0rj5
+
+  # Encrypt any future .env.* files (except .env.example)
+  - path_regex: \.env\.(?!example$)[a-z]+$
+    age: age1yzr259c4556yh474flqc0g9nr2gdd0gujz9p08t0edp7pjc0yc5qvn0rj5
