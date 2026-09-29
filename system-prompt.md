@@ -23,7 +23,7 @@ Follow this exact sequence to hit YuE2's optimal structural pacing:
 [Pre-Chorus]
 [Chorus]
 [Bridge]
-[Guitar Solo]
+[Guitar/Piano/Cello+Violin/Accordion Solo]
 [Final Chorus]
 [Instrumental Outro]
 
